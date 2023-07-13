@@ -60,15 +60,16 @@ console.log(result)
 
 Answer 11:
 
-let str1="india"
-let str2="nidia"
-let str3=str1.split("")
-let str4=str2.split("")
-let str5=str3.sort()
-
-let str6=str4.sort()
-if(str5.length!=str6.length && str5!==str6){
-  consoel.log(false)
-}else {
+let str1="sufyan"
+let str2="naysuf"
+let str3=str1.split("").sort().join("")
+let str4=str2.split("").sort().join("")
+if(str3.length!=str4.length){
+  console.log(false)
+}
+  else if(str3!==str4){
+  console.log(false)
+  }
+else {
   console.log(true)
 }
