@@ -1,3 +1,23 @@
+Answer no 7:
+const vowels=["a","e","i","o","u"]
+function countvowel(str){
+  var count=0
+  str.split("")
+  for(let x=0;x<str.length;x++){
+    if(str[x]==vowels[0] || str[x]==vowels[1] ||str[x]==vowels[2] ||str[x]==vowels[3] ||str[x]==vowels[4])
+    {
+      count++
+    }
+  }
+  console.log(count)
+}
+countvowel("iam sufyan")
+
+
+
+
+
+
 Answer no:8
 
 function evenNo(num){
@@ -15,12 +35,6 @@ num2[j]=num[i]
 let nums=[11,4,7,8];
 const result=evenNo(nums);
 console.log(result)
-
-
-
-
-
-
 
 
 
