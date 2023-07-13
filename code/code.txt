@@ -1,3 +1,29 @@
+Answer no:8
+
+function evenNo(num){
+  const num2=[];
+  let j=0
+for(let i=0;i<num.length;i++){
+  if(num[i]%2==0){
+    
+num2[j]=num[i] 
+    j++;
+  }
+}
+  return num2;
+}
+let nums=[11,4,7,8];
+const result=evenNo(nums);
+console.log(result)
+
+
+
+
+
+
+
+
+
 
 Answer 10:
 function factorial(number) {
