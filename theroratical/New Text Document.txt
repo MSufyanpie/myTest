@@ -1,0 +1,44 @@
+Answer sheet
+
+AnnswerNO:1
+
+Output of the code:4
+
+AnswerNo:2
+output of the code:
+First 
+Third 
+Second
+
+Answer no:3
+output:
+1
+0
+
+Answerno:4
+0 9
+1 9
+2 9
+3 9
+4 9
+5 9
+6 9 
+7 9
+8 9
+9 9
+
+Answerno:5
+
+Hoisting: It is a by default behaviour of Javascript which transfer declarations of the variables and function 
+above its scope.where it is used or executed. but for the let and const it doesnt transfer the declaration to above. 
+It will go in to temporal dead zone and gives a reference error.
+e.g console.log (name)      e.g no: 2  console.log(name)
+    var name="sufyan"                  let name="sufyan"  
+    output: sufyan                     output: error  and (same goes in the case of const)
+
+
+
+Answerno:6
+difference between == and ===: 
+== is used to compare the values between the variables on left and right side.
+=== is used to compare values and datatype of both variables. 

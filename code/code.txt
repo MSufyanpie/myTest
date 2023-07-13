@@ -1,0 +1,34 @@
+
+Answer 10:
+function factorial(number) {
+
+  if (number == 1) {
+    console.log("0")
+  }
+  else if (number == 0) {
+    console.log("1")
+  }
+  else {
+    return number * (number - 1) * (number - 2)
+  }
+}
+const result = factorial(4)
+console.log(result)
+
+
+
+
+Answer 11:
+
+let str1="india"
+let str2="nidia"
+let str3=str1.split("")
+let str4=str2.split("")
+let str5=str3.sort()
+
+let str6=str4.sort()
+if(str5.length!=str6.length && str5!==str6){
+  consoel.log(false)
+}else {
+  console.log(true)
+}
