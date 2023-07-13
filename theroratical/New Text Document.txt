@@ -4,28 +4,40 @@ AnnswerNO:1
 
 Output of the code:4
 
+fist the i will be 0 then after incrementing it will be 1and square of 1 is 1 so 1 then after 
+incrementing it will be 2 and square of 2 is 4 and i will contain 4 then it will  increment 4 to 5 but the 
+condition will become false so loop will be terminated and output will be 4
+
+
+
 AnswerNo:2
 output of the code:
 First 
 Third 
 Second
 
+the "third" will be printed before "second" because of setTimeout function although there is delay of only 0 
+but in backend the timeOut func will go into the web api part then it will go into call stack and event loop will
+transfer it to task queuenand then it will be executed. during that time the remaining statements will run.
+
 Answer no:3
 output:
 1
 0
+First console is printing 1 because it is in the block scope off let count=1
+and second console is showing ouput 0 because that console.log is out of the block scope of let.  
 
 Answerno:4
-0 9
-1 9
-2 9
-3 9
-4 9
-5 9
-6 9 
-7 9
-8 9
-9 9
+0 9 0
+1 9 1
+2 9 2
+3 9 3
+4 9 4
+5 9 5
+6 9 6
+7 9 7
+8 9 8
+9 9 9
 
 Answerno:5
 
@@ -39,6 +51,21 @@ e.g console.log (name)      e.g no: 2  console.log(name)
 
 
 Answerno:6
+
+
+
 difference between == and ===: 
 == is used to compare the values between the variables on left and right side.
 === is used to compare values and datatype of both variables. 
+e.g var a=0,var b="0"
+    if (a==0){
+   console.log("true")
+          } 
+  
+output: it will show true because it is comparing just values in both variables which is 0 in both 
+but if we try if(a===b){
+              console.log("true")
+                        }
+ output: it will show nothing because === is comparing values and 
+dataype also of both variables and a have dataype number
+and b is string so thats i will not show true.
