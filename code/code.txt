@@ -42,34 +42,45 @@ console.log(result)
 Answer 10:
 function factorial(number) {
 
-  if (number == 1) {
-    console.log("0")
-  }
-  else if (number == 0) {
-    console.log("1")
-  }
-  else {
-    return number * (number - 1) * (number - 2)
+  if (number <= 1) {
+    return 1
+  } else {
+    return (number * factorial(number - 1))
   }
 }
-const result = factorial(4)
-console.log(result)
 
+const result = factorial(3)
+console.log(result)
 
 
 
 Answer 11:
 
-let str1="sufyan"
-let str2="naysuf"
-let str3=str1.split("").sort().join("")
-let str4=str2.split("").sort().join("")
-if(str3.length!=str4.length){
-  console.log(false)
+const checkAnagram = (s1,s2)=>{
+    if(s1.length !== s2.length){
+        return false;
+    }
+    let obj = {};
+    for(let i = 0; i<s1.length ;i++){
+        let char = s1[i];
+        if(obj[char]){
+            obj[char]+=1;
+        }else{
+            obj[char] = 1;
+        }
+    }
+    console.log(obj)
+    
+    for(let i = 0 ; i<s2.length; i++){
+        let char = s2[i];
+        console.log(obj[char],"-----",char)
+        if(obj[char]){
+            obj[char]-=1;
+        }else{
+            return false;
+        }
+    }
+    return true
+    
 }
-  else if(str3!==str4){
-  console.log(false)
-  }
-else {
-  console.log(true)
-}
+console.log(checkAnagram('anagrama','mragnaaa'),)
